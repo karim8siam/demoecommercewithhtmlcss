@@ -1,0 +1,18 @@
+@import url('styles.css');
+
+/* Checkout.css */
+.checkout-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #e6ffe6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-heading {
+    font-size: 2.5rem;
+    color: #26734d;
+    font-weight: 600;
+} 

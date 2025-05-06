@@ -1,0 +1,180 @@
+@import url('styles.css');
+
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background-color: #927B7B;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    z-index: 10;
+}
+
+.hero-heading {
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.categories-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    background-color: #927B7B;
+}
+
+.category-item {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: transparent;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.category-image {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.button-container {
+    /* This ensures all buttons align at the bottom */
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.shop-now-btn {
+    display: inline-block;
+    background-color: #1a1a4b; /* Dark navy color from screenshot */
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #0d0d3a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .categories-container {
+        flex-direction: column;
+    }
+
+    .category-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .category-image {
+        height: 300px;
+    }
+}
+
+/* CSS for the Benefits Section */
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #300000; /* Dark red/brown background color */
+    padding: 40px 0 40px 0;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    margin: 0 auto;
+}
+
+.benefit-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.benefit-item h2 {
+    color: #40b0ff; /* Light blue text color */
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.benefit-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .benefits-container {
+        flex-direction: column;
+    }
+    
+    .benefit-item {
+        margin-bottom: 20px;
+    }
+}
